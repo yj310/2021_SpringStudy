@@ -3,6 +3,7 @@ package kr.hs.study.config;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import kr.hs.study.dao.LoginDAO;
@@ -13,6 +14,7 @@ import kr.hs.study.dto.LoginDTO;
 public class JavaConfig {
 	
 	@Bean
+	@Scope("prototype")
 	public LoginDTO LoginDTO() {
 		LoginDTO ld = new LoginDTO();
 		return ld;

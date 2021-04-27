@@ -3,6 +3,8 @@
  */
 package kr.hs.study.dto;
 
+import java.beans.JavaBean;
+
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -12,14 +14,13 @@ import org.springframework.stereotype.Component;
 public class LoginDTO {
 
 	private String userid;
-	private String userpassword;
-	
+	private int userpassword;
 	
 	public LoginDTO() {
 		super();
 	}
 
-	public LoginDTO(String userid, String userpassword) {
+	public LoginDTO(String userid, int userpassword) {
 		super();
 		this.userid = userid;
 		this.userpassword = userpassword;
@@ -37,11 +38,11 @@ public class LoginDTO {
 		this.userid = userid;
 	}
 
-	public String getUserpassword() {
+	public int getUserpassword() {
 		return userpassword;
 	}
 
-	public void setUserpassword(String userpassword) {
+	public void setUserpassword(int userpassword) {
 		this.userpassword = userpassword;
 	}
 	
