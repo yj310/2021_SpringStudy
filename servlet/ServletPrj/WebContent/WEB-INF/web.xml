@@ -11,14 +11,14 @@
   
   <!-- 
   <servlet>
-  	<servlet-name>first</servlet-name>
-  	<servlet-class>kr.hs.servlet.FirstServlet</servlet-class>
+  	<servlet-name>Odd</servlet-name>
+  	<servlet-class>kr.hs.servlet.Odd</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>first</servlet-name>
-  	<url-pattern>/hello</url-pattern>
+  	<servlet-name>Odd</servlet-name>
+  	<url-pattern>bye</url-pattern>
   </servlet-mapping>
-   -->
+    -->
    
    
    
