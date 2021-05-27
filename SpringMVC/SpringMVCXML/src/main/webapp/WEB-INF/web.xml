@@ -6,12 +6,13 @@
 	http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
 
 	
-	<!-- 리스터 등록 -->
-	<!-- 
-	<listener>
-		<listener-class>org.springframework.web.context.ContextListener</listener-class>
-	</listener>
-	 -->
+
+	<!-- 현재 웹 애플리케이션에서 받아들이는 모든 요청에 대해 appServlet이라는 이름으로 정의되어 있는 서블릿을 사용하겠다. -->
+	<servlet-mapping>
+		<servlet-name>appServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
 
 	<!-- dispatcher servlet 을 appServlet 이란 이름으로 등록 -->
 	<!-- dispatcher: 사용자 요청이 들어오면 적절한 controller를 선택하게 해주는 것 -->
@@ -24,13 +25,8 @@
 			<param-name>contextConfigLocation</param-name>
 			<param-value>/WEB-INF/config/servlet-context.xml</param-value>
 		</init-param>
+        <load-on-startup>1</load-on-startup>
 	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>appServlet</servlet-name>
-		<url-pattern>/**</url-pattern>
-	</servlet-mapping>
-
 
 	<!-- bean 정의할 xml 파일 설정 위치 등록 -->
 	<context-param>
@@ -38,6 +34,13 @@
 		<param-value>/WEB-INF/config/root-context.xml</param-value>
 	</context-param>
 
+
+
+	<!-- 리스터 등록 -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	 
 	
 	<!-- encoding; UTF-8 -->
 	<!-- 사용자 요청에 한글이 들어오면 무조건 강제적으로 UTF-8로 인코딩 -->
