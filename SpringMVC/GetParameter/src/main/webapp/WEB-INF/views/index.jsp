@@ -2,21 +2,18 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-
-<link href="css/style.css" rel="stylesheet" type="text/css">
-
-<title>Insert title here</title>
+	<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link href="css/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	
+	<img src="img/logo.svg"/>
+	<!-- <img src="img/1.png"/> -->
 	<h1>Hello Spring MVC~!</h1>
 	
 	<br><br>
-	
-	<img src="img/logo.svg" style="width: 200px"/> <br>
-	<img src="img/1.png" style="width: 200px"/> 
 	
 	<br><br>
 	
