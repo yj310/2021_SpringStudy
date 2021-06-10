@@ -20,7 +20,7 @@
 	<a href="/test9?a=300&b=400&c=500">RequestParam4</a>
 	<a href="/test10?a=100&b=200&c=300&c=400">Object(Map)</a>
 	<a href="/test11?a=100&b=200&c=300&c=400">Object(Map List)</a>
-	<a href="/test12?a=100&b=200&c=300">ModelAndAttribute</a>
+	<a href="/test12?a=100&b=200&c=300">ModelAttribute</a>
 	
 	<br><br>
 </body>
