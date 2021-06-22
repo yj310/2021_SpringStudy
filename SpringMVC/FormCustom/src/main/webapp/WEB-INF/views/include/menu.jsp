@@ -10,6 +10,8 @@
 <body>
 	
 	<a href="/test1">1. request로 수정(jsp 방식)</a>
+	<a href="/test2">2. Custom Tag 1(spring 방식)</a>
+	<a href="/test3">3. Custom Tag 2(spring 방식) (객체이름: user)</a>
 	
 	<br><br>
 </body>
