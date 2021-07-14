@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+#container {
+	width: 500px;
+	border: solid 1px lightgray;
+	border-radius: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+h4 {
+	font-family: "Candara", "Calibri", Times, serif;
+	font-weight: normal;
+	text-align: center;
+	font-size: 25px;
+}

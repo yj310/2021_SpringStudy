@@ -2,3 +2,5 @@
 *.properties
 
 myBatis/MyBatis2/.settings/
+
+myBatis/Book/.settings/
