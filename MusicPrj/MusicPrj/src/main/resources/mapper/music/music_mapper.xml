@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="music">
+	
+	
+	<select id="getlist" resultType="kr.hs.study.model.dto.MusicDTO">
+		select * from music order by id desc
+	</select>
+	
+	<insert id="addmusic" parameterType="kr.hs.study.model.dto.MusicDTO">
+		<selectKey keyProperty="music_seq" resultType="int" order="BEFORE">
+			select music_seq.nextval FROM DUAL
+		</selectKey>
+		insert into music values(#{music_seq}, #{song_title}, #{song_singer}, #{song_genre}, #{song_price}, #{song_passwd}, #{song_date})
+	</insert>
+	
+	<select id="searchmusic" resultType="kr.hs.study.model.dto.MusicDTO">
+		select * from music where song_title=#{title} order by id desc
+	</select>
+	
+	<select id="getitem" resultType="kr.hs.study.model.dto.MusicDTO">
+		select * from music where id=#{id}
+	</select>
+	
+	<update id="modifymusic" parameterType="kr.hs.study.model.dto.MusicDTO">
+		update music set song_title=#{song_title}, song_singer=#{song_singer}, song_genre=#{song_genre}, song_price=#{song_price}, song_passwd=#{song_passwd}, song_date=#{song_date} where id=#{id}
+	</update>
+	
+	<delete id="deletemusic">
+		delete from music where id=#{id}
+	</delete>
+	
+	
+</mapper>       

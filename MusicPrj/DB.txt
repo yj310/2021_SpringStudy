@@ -1,0 +1,11 @@
+create table music (
+    id NUMBER(20),
+    song_title VARCHAR2(128),
+    song_singer VARCHAR2(128),
+    song_genre VARCHAR2(128),
+    song_price NUMBER(20),
+    song_passwd VARCHAR2(128),
+    song_date VARCHAR2(128)
+
+);
+create sequence music_seq increment by 1 start with 1;

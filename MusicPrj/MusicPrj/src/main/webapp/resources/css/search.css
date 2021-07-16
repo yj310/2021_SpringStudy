@@ -1,0 +1,42 @@
+@charset "EUC-KR";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
+/* Style the search field */
+form.searchmusic input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+}
+
+/* Style the submit button */
+form.searchmusic button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: lightgray;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.searchmusic button:hover {
+  background: gray;
+}
+
+/* Clear floats */
+form.searchmusic::after {
+  content: "";
+  clear: both;
+  display: table;
+}

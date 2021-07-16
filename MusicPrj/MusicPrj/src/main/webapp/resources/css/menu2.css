@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+#menu {
+	background-color: #eee;
+	color: black;
+	display: block;
+	padding: 12px;
+	margin: 0 auto;
+	width: 500px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#menu:link {
+  text-decoration: none;
+  color: gray;
+}
+
+#menu:visited {
+  text-decoration: none;
+  color: gray;
+}
+
+#menu:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #ccc;
+}
+
+#menu.active {
+  background-color: #04AA6D;
+  color: lightgray;
+}

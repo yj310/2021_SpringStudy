@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+#container {
+	width: 1000px;
+	border: solid 1px lightgray;
+	border-radius: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+h4 {
+	font-family: "Candara", "Calibri", Times, serif;
+	font-weight: normal;
+	text-align: center;
+	font-size: 25px;
+}
+
+table {
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid #444444;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #444444;
+}
+
+.link {
+	color: gray;
+	display: block;
+	text-decoration: none;
+}
+
+.link:link {
+  text-decoration: none;
+  color: gray;
+}
+
+.link:visited {
+  text-decoration: none;
+  color: gray;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: lightgray;
+}
+
+.link.active {
+  color: white;
+}
