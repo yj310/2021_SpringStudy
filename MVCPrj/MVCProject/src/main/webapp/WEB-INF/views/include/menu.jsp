@@ -9,6 +9,11 @@
 </head>
 <body>
 	
+	<a href="/gugudan">구구단</a>
+	<a href="/sum">n-m까지의 합</a>
+	<a href="/member">회원관리</a>
+	
+	<br>
 	<a href="/input_data">input_data</a>
 	<a href="/read_data">read_data</a>
 	
