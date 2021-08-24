@@ -6,11 +6,12 @@
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
 	<link href="css/index.css" rel="stylesheet" type="text/css">
-	<link href="css/menu.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
+	<a href="/home"><img src="img/logo.svg"/></a>
 	
-	<jsp:include page="result_top.jsp"/>
-	<jsp:include page="result_bottom.jsp"/>
+	<br>
+	
 </body>
 </html>

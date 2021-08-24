@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestAttribute;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import kr.hs.study.model.dto.UserDTO;
+import kr.hs.study.model.dto.MemberDTO;
 
 @Controller
 public class TestController {
@@ -21,7 +21,7 @@ public class TestController {
 	
 	@GetMapping("/gugudan")
 	public String gugudanForm() {
-		return "gugudan_form";
+		return "gugudan/gugudan_form";
 	}
 	
 	@PostMapping("/gugudan")
@@ -29,13 +29,13 @@ public class TestController {
 
 		model.addAttribute("number", dan);
 		
-		return "gugudan_result";
+		return "gugudan/gugudan_result";
 	}
 	
 
 	@GetMapping("/sum")
 	public String sumForm() {
-		return "sum_form";
+		return "sum/sum_form";
 	}
 	
 	@PostMapping("/sum")
@@ -44,20 +44,8 @@ public class TestController {
 		model.addAttribute("n", n);
 		model.addAttribute("m", m);
 		
-		return "sum_result";
+		return "sum/sum_result";
 	}
-	
-
-	@GetMapping("/member")
-	public String memberForm() {
-		return "member_form";
-	}
-
-	@PostMapping("/member")
-	public String member() {
-		return "member_result";
-	}
-	
 	
 	
 	
@@ -93,7 +81,7 @@ public class TestController {
 	
 	@GetMapping("/register_form")
 	public String register() {
-		return "register_form";
+		return "login/register_form";
 	}
 	
 	@PostMapping("/register")

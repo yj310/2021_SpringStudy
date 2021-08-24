@@ -9,10 +9,10 @@
 </head>
 <body>
 
-	<jsp:include page="result_top.jsp"/>
+	<jsp:include page="../result/result_top.jsp"/>
 	
 	<div id="container">
-		<h4>n-m까지의 합 [${n } - ${m }(${n-m })까지의 합]</h4>
+		<h4>n-m까지의 합 [${n } - ${m }까지의 합]</h4>
 		
 		
 		
@@ -21,10 +21,10 @@
 			int m = Integer.parseInt(String.valueOf(request.getAttribute("m")));
 			int sum = 0;
 			
-			for(int i = 1; i <= n-m; i++) {
+			for(int i = n; i <= m; i++) {
 				sum += i;
 				out.print(i);
-				if(i != n-m) out.print(" + ");
+				if(i != m) out.print(" + ");
 			}
 			out.print(" = " + sum);
 		%>
@@ -34,6 +34,6 @@
 		<br>
 	</div>
 	
-	<jsp:include page="result_bottom.jsp"/>
+	<jsp:include page="../result/result_bottom.jsp"/>
 </body>
 </html>

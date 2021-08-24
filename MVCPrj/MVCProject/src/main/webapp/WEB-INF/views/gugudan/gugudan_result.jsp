@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<jsp:include page="result_top.jsp"/>
+	<jsp:include page="../result/result_top.jsp"/>
 	
 	<div id="container">
 		<h4>구구단 [${number}단]</h4>
@@ -25,6 +25,6 @@
 		<br>
 	</div>
 	
-	<jsp:include page="result_bottom.jsp"/>
+	<jsp:include page="../result/result_bottom.jsp"/>
 </body>
 </html>

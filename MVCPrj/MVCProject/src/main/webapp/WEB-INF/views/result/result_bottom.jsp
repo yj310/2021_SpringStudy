@@ -5,18 +5,13 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
-	<link href="css/index.css" rel="stylesheet" type="text/css">
+	<link href="css/button.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	
-	<jsp:include page="ui/top.jsp"/>
-	<h1>Hello Spring MVC~!</h1>
-	
+
 	<br><br>
 	
-	<br><br>
-	
-	<jsp:include page="include/menu.jsp"/>
+	<a href="/home"><button>Home</button></a>
 	
 </body>
 </html>

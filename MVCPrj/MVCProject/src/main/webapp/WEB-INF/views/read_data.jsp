@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+	<jsp:include page="ui/top.jsp"/>
+	
 	read_data
 </body>
 </html>
