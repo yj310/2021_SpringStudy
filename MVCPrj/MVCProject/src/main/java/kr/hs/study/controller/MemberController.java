@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
 import kr.hs.study.model.dto.MemberDTO;
 import kr.hs.study.service.MemberService;
 
@@ -23,5 +25,19 @@ public class MemberController {
 		return "member/member_list";
 	}
 	
+	@GetMapping("/add_member")
+	public String addMemberForm() {
+		return "member/add_member";
+	}
+	
+	
+	@PostMapping("/add_member")
+	public String addMember(Model model, MemberDTO dto) {
+
+		model.addAttribute("member", dto);
+		memberService.insert(dto);
+		
+		return "member/add_member_result";
+	}
 	
 }

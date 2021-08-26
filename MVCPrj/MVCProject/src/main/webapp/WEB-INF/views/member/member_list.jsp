@@ -35,8 +35,8 @@
 			</table>
 		
 		
-		<br><br>
-		<a href="/member_join"><button>회원가입</button></a>
+		<br><br><br><br>
+		<a href="/add_member"><button>회원가입</button></a>
 		<a href="/home"><button>Home</button></a>
 		
 	</div>

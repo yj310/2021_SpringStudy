@@ -11,5 +11,8 @@
 		select * from member order by name desc
 	</select>
 	
+	<insert id="addMember" parameterType="kr.hs.study.model.dto.MemberDTO">
+		insert into member(userid, passwd, name, email) values(#{userid}, #{passwd}, #{name}, #{email})
+	</insert>
 	
 </mapper>       

@@ -53,42 +53,5 @@ public class TestController {
 	
 	
 	
-	@GetMapping("/input_data")
-	public String input_data() {
-		return "input_data";
-	}
-	
-	@GetMapping("/read_data")
-	public String read_data() {
-		return "read_data";
-	}
-	
-	
-	
-	
-	
-	
-	
-	@GetMapping("/login")
-	public String login() {
-		return "login/login_form";
-	}
-	
-	@PostMapping("/login")
-	public String login2() {
-		return "result";
-	}
-	
-	@GetMapping("/register_form")
-	public String register() {
-		return "login/register_form";
-	}
-	
-	@PostMapping("/register")
-	public String register2() {
-		return "result";
-	}
-	
-	
 	
 }

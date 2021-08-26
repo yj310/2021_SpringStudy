@@ -21,7 +21,7 @@ public class MemberServiceImpl implements MemberService {
 
 	public void insert(MemberDTO dto) {
 		// TODO Auto-generated method stub
-
+		dao.insert(dto);
 	}
 
 	public MemberDTO read(String userid) {

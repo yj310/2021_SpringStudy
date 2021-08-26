@@ -13,14 +13,12 @@
 	<jsp:include page="../ui/top.jsp"/>
 	
 	<div class="container">
-		<h1>Login</h1>
-		<form method="post" action="/register">
-			<input type="text" name="name" placeholder="name"/><br>
-			<input type="text" name="id" placeholder="ID"/><br>
-			<input type="password" name="pw" placeholder="PW"/><br>
+		<h1>Add Member</h1>
+		<form method="post" action="/add_member">
+			<input type="text" name="userid" placeholder="id"/><br>
+			<input type="password" name="passwd" placeholder="password"/><br>
+			<input type="text" name="name" placeholder="Name"/><br>
 			<input type="text" name="email" placeholder="E-MAIL"/><br>
-			<input type="text" name="address" placeholder="Address"/><br>
-			<input type="text" name="address_detail" placeholder="Address Detail"/><br>
 			<input type="submit" value="submit"/>
 		</form>
 	</div>
