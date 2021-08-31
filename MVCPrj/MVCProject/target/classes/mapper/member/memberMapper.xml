@@ -6,7 +6,6 @@
  
 <mapper namespace="member">
 	
-	
 	<select id="getlist" resultType="kr.hs.study.model.dto.MemberDTO">
 		select * from member order by name desc
 	</select>
@@ -14,5 +13,21 @@
 	<insert id="addMember" parameterType="kr.hs.study.model.dto.MemberDTO">
 		insert into member(userid, passwd, name, email) values(#{userid}, #{passwd}, #{name}, #{email})
 	</insert>
+	
+	<select id="read" resultType="kr.hs.study.model.dto.MemberDTO">
+		select * from member where userid=#{userid}
+	</select>
+	
+	<select id="check" resultType="int">
+		select count(*) from member where userid=#{userid} and passwd=#{passwd}
+	</select>
+	
+	<update id="update" parameterType="kr.hs.study.model.dto.MemberDTO">
+		update member set name=#{name}, email=#{email} WHERE userid=#{userid}
+	</update>
+	
+	<delete id="delete" parameterType="java.lang.String">
+		delete from member where userid=#{userid}
+	</delete>
 	
 </mapper>       

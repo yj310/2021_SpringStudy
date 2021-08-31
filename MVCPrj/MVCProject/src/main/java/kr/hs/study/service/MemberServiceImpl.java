@@ -26,7 +26,22 @@ public class MemberServiceImpl implements MemberService {
 
 	public MemberDTO read(String userid) {
 		// TODO Auto-generated method stub
-		return null;
+		return dao.read(userid);
+	}
+
+	public boolean Check(String userid, String passwd) {
+		// TODO Auto-generated method stub
+		return dao.Check(userid, passwd);
+	}
+
+	public void update(MemberDTO dto) {
+		// TODO Auto-generated method stub
+		dao.update(dto);
+	}
+
+	public void delete(String userid) {
+		// TODO Auto-generated method stub
+		dao.delete(userid);
 	}
 
 }

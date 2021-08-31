@@ -27,7 +27,7 @@
 		        <c:forEach var="mid" items="${list}">
 			        <tr>
 			            <td>${mid.userid }</td>
-			            <td>${mid.name }</td>
+			            <td><a href="/member/read?userid=${mid.userid }">${mid.name }</a></td>
 			            <td>${mid.email }</td>
 			            <td>${mid.join_date }</td>
 			        </tr>
